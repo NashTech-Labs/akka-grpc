@@ -1,9 +1,9 @@
-Akka- grpc-project
+**Akka- grpc-project**
 
-Compile the project by entering:
+_Compile the project by entering:_
 mvn compile
 
-Run the server:
+_Run the server:_
 
 mvn compile dependency:properties exec:exec@server
 
@@ -12,7 +12,7 @@ The output should include something like:
 
 gRPC server bound to: /127.0.0.1:8080
 
-Run the client, open another console window and enter:
+_Run the client, open another console window and enter:_
 
 mvn compile dependency:properties exec:exec@client
 
