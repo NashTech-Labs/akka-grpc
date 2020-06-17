@@ -1,0 +1,5 @@
+#surefire
+#Wed Jun 17 13:19:03 IST 2020
+user.dir=/home/knoldus/Documents/akka-grpc-java/akka-grpc-java
+localRepository=/home/knoldus/.m2/repository
+basedir=/home/knoldus/Documents/akka-grpc-java/akka-grpc-java

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="2" failures="0" name="com.example.helloworld.GreeterTest" time="1.005" errors="2" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.252-b09"/>
+    <property name="java.vm.vendor" value="Private Build"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/knoldus/Documents/akka-grpc-java/akka-grpc-java"/>
+    <property name="java.runtime.version" value="1.8.0_252-8u252-b09-1~18.04-b09"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="basedir" value="/home/knoldus/Documents/akka-grpc-java/akka-grpc-java"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="surefire.real.class.path" value="/home/knoldus/Documents/akka-grpc-java/akka-grpc-java/target/surefire/surefirebooter5146334817587953804.jar:/home/knoldus/.m2/repository/org/mortbay/jetty/alpn/jetty-alpn-agent/2.0.10/jetty-alpn-agent-2.0.10.jar"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="surefire.test.class.path" value="/home/knoldus/Documents/akka-grpc-java/akka-grpc-java/target/test-classes:/home/knoldus/Documents/akka-grpc-java/akka-grpc-java/target/classes:/home/knoldus/.m2/repository/com/lightbend/akka/grpc/akka-grpc-runtime_2.13/0.8.4/akka-grpc-runtime_2.13-0.8.4.jar:/home/knoldus/.m2/repository/org/scala-lang/scala-library/2.13.1/scala-library-2.13.1.jar:/home/knoldus/.m2/repository/com/thesamet/scalapb/scalapb-runtime_2.13/0.10.2/scalapb-runtime_2.13-0.10.2.jar:/home/knoldus/.m2/repository/com/thesamet/scalapb/lenses_2.13/0.10.2/lenses_2.13-0.10.2.jar:/home/knoldus/.m2/repository/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar:/home/knoldus/.m2/repository/org/scala-lang/modules/scala-collection-compat_2.13/2.1.4/scala-collection-compat_2.13-2.1.4.jar:/home/knoldus/.m2/repository/com/lihaoyi/fastparse_2.13/2.2.4/fastparse_2.13-2.2.4.jar:/home/knoldus/.m2/repository/com/lihaoyi/sourcecode_2.13/0.2.1/sourcecode_2.13-0.2.1.jar:/home/knoldus/.m2/repository/com/lihaoyi/geny_2.13/0.5.1/geny_2.13-0.5.1.jar:/home/knoldus/.m2/repository/io/grpc/grpc-core/1.28.1/grpc-core-1.28.1.jar:/home/knoldus/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/home/knoldus/.m2/repository/com/google/android/annotations/4.1.1.4/annotations-4.1.1.4.jar:/home/knoldus/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/home/knoldus/.m2/repository/io/perfmark/perfmark-api/0.19.0/perfmark-api-0.19.0.jar:/home/knoldus/.m2/repository/io/grpc/grpc-netty-shaded/1.28.1/grpc-netty-shaded-1.28.1.jar:/home/knoldus/.m2/repository/com/typesafe/akka/akka-stream_2.13/2.5.31/akka-stream_2.13-2.5.31.jar:/home/knoldus/.m2/repository/com/typesafe/akka/akka-actor_2.13/2.5.31/akka-actor_2.13-2.5.31.jar:/home/knoldus/.m2/repository/com/typesafe/config/1.3.3/config-1.3.3.jar:/home/knoldus/.m2/repository/org/scala-lang/modules/scala-java8-compat_2.13/0.9.0/scala-java8-compat_2.13-0.9.0.jar:/home/knoldus/.m2/repository/com/typesafe/akka/akka-protobuf_2.13/2.5.31/akka-protobuf_2.13-2.5.31.jar:/home/knoldus/.m2/repository/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar:/home/knoldus/.m2/repository/com/typesafe/ssl-config-core_2.13/0.3.8/ssl-config-core_2.13-0.3.8.jar:/home/knoldus/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.13/1.1.2/scala-parser-combinators_2.13-1.1.2.jar:/home/knoldus/.m2/repository/com/typesafe/akka/akka-http-core_2.13/10.1.11/akka-http-core_2.13-10.1.11.jar:/home/knoldus/.m2/repository/com/typesafe/akka/akka-parsing_2.13/10.1.11/akka-parsing_2.13-10.1.11.jar:/home/knoldus/.m2/repository/com/typesafe/akka/akka-http_2.13/10.1.11/akka-http_2.13-10.1.11.jar:/home/knoldus/.m2/repository/com/typesafe/akka/akka-http2-support_2.13/10.1.11/akka-http2-support_2.13-10.1.11.jar:/home/knoldus/.m2/repository/com/twitter/hpack/1.0.2/hpack-1.0.2.jar:/home/knoldus/.m2/repository/org/eclipse/jetty/alpn/alpn-api/1.1.3.v20160715/alpn-api-1.1.3.v20160715.jar:/home/knoldus/.m2/repository/com/typesafe/akka/akka-discovery_2.13/2.5.31/akka-discovery_2.13-2.5.31.jar:/home/knoldus/.m2/repository/com/typesafe/akka/akka-stream-testkit_2.13/2.6.5/akka-stream-testkit_2.13-2.6.5.jar:/home/knoldus/.m2/repository/com/typesafe/akka/akka-testkit_2.13/2.6.5/akka-testkit_2.13-2.6.5.jar:/home/knoldus/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/knoldus/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/knoldus/.m2/repository/io/grpc/grpc-stub/1.28.1/grpc-stub-1.28.1.jar:/home/knoldus/.m2/repository/io/grpc/grpc-api/1.28.1/grpc-api-1.28.1.jar:/home/knoldus/.m2/repository/io/grpc/grpc-context/1.28.1/grpc-context-1.28.1.jar:/home/knoldus/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/knoldus/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.18/animal-sniffer-annotations-1.18.jar:/home/knoldus/.m2/repository/com/google/guava/guava/28.1-android/guava-28.1-android.jar:/home/knoldus/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/knoldus/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/knoldus/.m2/repository/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.jar:/home/knoldus/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/home/knoldus/.m2/repository/org/mortbay/jetty/alpn/jetty-alpn-agent/2.0.10/jetty-alpn-agent-2.0.10.jar:"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.15.0-101-generic"/>
+    <property name="user.home" value="/home/knoldus"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="knoldus"/>
+    <property name="java.class.path" value="/home/knoldus/Documents/akka-grpc-java/akka-grpc-java/target/test-classes:/home/knoldus/Documents/akka-grpc-java/akka-grpc-java/target/classes:/home/knoldus/.m2/repository/com/lightbend/akka/grpc/akka-grpc-runtime_2.13/0.8.4/akka-grpc-runtime_2.13-0.8.4.jar:/home/knoldus/.m2/repository/org/scala-lang/scala-library/2.13.1/scala-library-2.13.1.jar:/home/knoldus/.m2/repository/com/thesamet/scalapb/scalapb-runtime_2.13/0.10.2/scalapb-runtime_2.13-0.10.2.jar:/home/knoldus/.m2/repository/com/thesamet/scalapb/lenses_2.13/0.10.2/lenses_2.13-0.10.2.jar:/home/knoldus/.m2/repository/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar:/home/knoldus/.m2/repository/org/scala-lang/modules/scala-collection-compat_2.13/2.1.4/scala-collection-compat_2.13-2.1.4.jar:/home/knoldus/.m2/repository/com/lihaoyi/fastparse_2.13/2.2.4/fastparse_2.13-2.2.4.jar:/home/knoldus/.m2/repository/com/lihaoyi/sourcecode_2.13/0.2.1/sourcecode_2.13-0.2.1.jar:/home/knoldus/.m2/repository/com/lihaoyi/geny_2.13/0.5.1/geny_2.13-0.5.1.jar:/home/knoldus/.m2/repository/io/grpc/grpc-core/1.28.1/grpc-core-1.28.1.jar:/home/knoldus/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/home/knoldus/.m2/repository/com/google/android/annotations/4.1.1.4/annotations-4.1.1.4.jar:/home/knoldus/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/home/knoldus/.m2/repository/io/perfmark/perfmark-api/0.19.0/perfmark-api-0.19.0.jar:/home/knoldus/.m2/repository/io/grpc/grpc-netty-shaded/1.28.1/grpc-netty-shaded-1.28.1.jar:/home/knoldus/.m2/repository/com/typesafe/akka/akka-stream_2.13/2.5.31/akka-stream_2.13-2.5.31.jar:/home/knoldus/.m2/repository/com/typesafe/akka/akka-actor_2.13/2.5.31/akka-actor_2.13-2.5.31.jar:/home/knoldus/.m2/repository/com/typesafe/config/1.3.3/config-1.3.3.jar:/home/knoldus/.m2/repository/org/scala-lang/modules/scala-java8-compat_2.13/0.9.0/scala-java8-compat_2.13-0.9.0.jar:/home/knoldus/.m2/repository/com/typesafe/akka/akka-protobuf_2.13/2.5.31/akka-protobuf_2.13-2.5.31.jar:/home/knoldus/.m2/repository/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar:/home/knoldus/.m2/repository/com/typesafe/ssl-config-core_2.13/0.3.8/ssl-config-core_2.13-0.3.8.jar:/home/knoldus/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.13/1.1.2/scala-parser-combinators_2.13-1.1.2.jar:/home/knoldus/.m2/repository/com/typesafe/akka/akka-http-core_2.13/10.1.11/akka-http-core_2.13-10.1.11.jar:/home/knoldus/.m2/repository/com/typesafe/akka/akka-parsing_2.13/10.1.11/akka-parsing_2.13-10.1.11.jar:/home/knoldus/.m2/repository/com/typesafe/akka/akka-http_2.13/10.1.11/akka-http_2.13-10.1.11.jar:/home/knoldus/.m2/repository/com/typesafe/akka/akka-http2-support_2.13/10.1.11/akka-http2-support_2.13-10.1.11.jar:/home/knoldus/.m2/repository/com/twitter/hpack/1.0.2/hpack-1.0.2.jar:/home/knoldus/.m2/repository/org/eclipse/jetty/alpn/alpn-api/1.1.3.v20160715/alpn-api-1.1.3.v20160715.jar:/home/knoldus/.m2/repository/com/typesafe/akka/akka-discovery_2.13/2.5.31/akka-discovery_2.13-2.5.31.jar:/home/knoldus/.m2/repository/com/typesafe/akka/akka-stream-testkit_2.13/2.6.5/akka-stream-testkit_2.13-2.6.5.jar:/home/knoldus/.m2/repository/com/typesafe/akka/akka-testkit_2.13/2.6.5/akka-testkit_2.13-2.6.5.jar:/home/knoldus/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/knoldus/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/knoldus/.m2/repository/io/grpc/grpc-stub/1.28.1/grpc-stub-1.28.1.jar:/home/knoldus/.m2/repository/io/grpc/grpc-api/1.28.1/grpc-api-1.28.1.jar:/home/knoldus/.m2/repository/io/grpc/grpc-context/1.28.1/grpc-context-1.28.1.jar:/home/knoldus/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/knoldus/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.18/animal-sniffer-annotations-1.18.jar:/home/knoldus/.m2/repository/com/google/guava/guava/28.1-android/guava-28.1-android.jar:/home/knoldus/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/knoldus/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/knoldus/.m2/repository/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.jar:/home/knoldus/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/home/knoldus/.m2/repository/org/mortbay/jetty/alpn/jetty-alpn-agent/2.0.10/jetty-alpn-agent-2.0.10.jar:"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="/home/knoldus/Documents/akka-grpc-java/akka-grpc-java/target/surefire/surefirebooter5146334817587953804.jar /home/knoldus/Documents/akka-grpc-java/akka-grpc-java/target/surefire/surefire8273171196118205383tmp /home/knoldus/Documents/akka-grpc-java/akka-grpc-java/target/surefire/surefire5676923493692787557tmp"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_252"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Private Build"/>
+    <property name="localRepository" value="/home/knoldus/.m2/repository"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="com.example.helloworld.GreeterTest" name="com.example.helloworld.GreeterTest" time="0">
+    <error message="akka.stream.impl.io.ConnectionSourceStage$$anon$1$$anon$2: Bind failed because of java.net.BindException: Address already in use" type="java.util.concurrent.ExecutionException">java.util.concurrent.ExecutionException: akka.stream.impl.io.ConnectionSourceStage$$anon$1$$anon$2: Bind failed because of java.net.BindException: Address already in use
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.super$get(FutureConvertersImpl.scala:91)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.$anonfun$get$2(FutureConvertersImpl.scala:91)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at scala.concurrent.package$.blocking(package.scala:124)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.get(FutureConvertersImpl.scala:91)
+	at com.example.helloworld.GreeterTest.setup(GreeterTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:104)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:147)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:98)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:101)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:139)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:82)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:81)
+Caused by: akka.stream.impl.io.ConnectionSourceStage$$anon$1$$anon$2: Bind failed because of java.net.BindException: Address already in use
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:220)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at akka.io.TcpListener.liftedTree1$1(TcpListener.scala:59)
+	at akka.io.TcpListener.&lt;init&gt;(TcpListener.scala:56)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:68)
+	at akka.actor.ArgsReflectConstructor.produce(IndirectActorProducer.scala:101)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:650)
+	at akka.actor.ActorCell.create(ActorCell.scala:676)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:549)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:571)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:293)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:228)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+</error>
+    <system-out>@SLTests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.195 sec
+@SLRunning com.example.helloworld.GreeterTest
+[WARN] [06/17/2020 13:19:05.475] [main] [ManifestInfo(akka://HelloWorldServer)] Detected possible incompatible versions on the classpath. Please note that a given Akka version MUST be the same across all modules of Akka that you are using, e.g. if you use [2.6.5] all other modules that are released together MUST be of the same version. Make sure you&apos;re using a compatible set of libraries. Possibly conflicting versions [2.5.31, 2.6.5] in libraries [akka-discovery:2.5.31, akka-protobuf:2.5.31, akka-actor:2.5.31, akka-stream-testkit:2.6.5, akka-stream:2.5.31]
+[ERROR] [06/17/2020 13:19:06.425] [HelloWorldServer-akka.actor.default-dispatcher-4] [akka://HelloWorldServer/system/IO-TCP/selectors/$a/0] Bind failed for TCP channel on endpoint [/127.0.0.1:8080]
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:220)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at akka.io.TcpListener.liftedTree1$1(TcpListener.scala:59)
+	at akka.io.TcpListener.&lt;init&gt;(TcpListener.scala:56)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at akka.util.Reflect$.instantiate(Reflect.scala:68)
+	at akka.actor.ArgsReflectConstructor.produce(IndirectActorProducer.scala:101)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:650)
+	at akka.actor.ActorCell.create(ActorCell.scala:676)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:549)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:571)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:293)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:228)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+
+</system-out>
+  </testcase>
+  <testcase classname="com.example.helloworld.GreeterTest" name="com.example.helloworld.GreeterTest" time="0">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at akka.testkit.TestKit$.shutdownActorSystem(TestKit.scala:1018)
+	at akka.testkit.javadsl.TestKit$.shutdownActorSystem(TestKit.scala:890)
+	at akka.testkit.javadsl.TestKit$.shutdownActorSystem(TestKit.scala:898)
+	at akka.testkit.javadsl.TestKit.shutdownActorSystem(TestKit.scala)
+	at com.example.helloworld.GreeterTest.teardown(GreeterTest.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:104)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:147)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:98)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:101)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:139)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:82)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:81)
+</error>
+  </testcase>
+</testsuite>
